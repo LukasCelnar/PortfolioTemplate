@@ -1,0 +1,78 @@
+.navigation {
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    background-color: $color-white;
+    //border-bottom: #333 solid 1px;
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+    @include mquery(tab-port) {
+       // display: none;
+    }
+}
+
+.header {
+
+    position: relative;
+    top: 0;
+
+    height: calc(100vh - 8rem);
+    width: 100%;
+
+    @include mquery(small-height) {
+        height: 100%;
+    }
+
+    @include mquery(tab-port) {
+        height: 100%;
+    }
+
+    &__background {
+        width: 100%;
+        background-color: #875DFF;
+        height: calc(100vh - 8rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-clip-path: polygon(0 0,25% 0,100% calc(100% - 30% - 23%),100% 100%,0 40%);
+        clip-path: polygon(0 0,25% 0,100% calc(100% - 30% - 23%),100% 100%,0 40%);
+        z-index: -100;
+
+        @include mquery(small-height) {
+            -webkit-clip-path: polygon(0 0,27% 0,100% calc(100% - 30% - 30%),100% 100%,0 55%);
+            clip-path: polygon(0 0,27% 0,100% calc(100% - 30% - 30%),100% 100%,0 55%);
+        }
+
+        @include mquery(phone) {
+            -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+    }
+
+    .skills {
+        min-width: 90rem;
+        background-color: $color-white;
+
+        @include mquery(tab-port) {
+            min-width: 40rem;
+        }
+
+        @include mquery(phone) {
+            min-width: 25rem;
+        }
+    }
+}
+
+.section-projects {
+
+    margin-bottom: 9rem;
+
+    @include mquery(tab-port) {
+        margin-top: 4rem;
+    }
+}
+
+.section-contact {
+
+    margin-top: 15rem;
+}

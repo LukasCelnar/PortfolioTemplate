@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free software engineer portfolio to use">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navigation__nav">
+            <div class="navigation-logo">
+                <div class="navigation-name">Your Name</div>
+                <div class="navigation-title">software engineer</div>
+            </div>
+
+            <div class="navigation__menu-background"></div>
+
+            <div class="navigation__hamburger-menu">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            
+            <ul class="navigation__items">
+                <li class="navigation__item"><a href="#skills" class="navigation__link">SKILLS</a></li>
+                <li class="navigation__item"><a href="#projects" class="navigation__link">PROJECTS</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header" id="skills">
+        <div class="header__background">
+            <!-- CLIP PATH -->
+        </div>
+        <div class="header__content">
+            <img class="header__img" src="images/programmer.svg" alt="programmer">
+            <div class="header__heading">Hi, I'm Name</div>
+            <p class="header__paragraph">I'm experienced software engineer that loves coding, also i have a 9+ years of experience, dont belive ? Check out my resumme</p>
+            <a class="btn btn--big btn--white" href="#">RESUME</a>
+
+            <div class="skills">
+                <ul class="skills__front">
+                    <li class="skills__icons"><img src="images/web-programming.svg" alt="frontend icon"></li>
+                    <li class="skills__heading">Frontend</li>
+                    <li class="skills__leanguages">Leanguages</li>
+                    <li class="skills__leanguages-items">HTML, CSS, JavaScript</li>
+                    <li class="skills__leanguages-tools">Tools i use</li>
+                    <li class="skills__leanguages-tools-items">React, Angular, Vue, SASS, Bootstrap, Redux</li>
+                </ul>
+                <ul class="skills__back">
+                    <li class="skills__icons"><img src="images/database-storage.svg" alt="backend icon"></li>
+                    <li class="skills__heading">Backend</li>
+                    <li class="skills__leanguages">Leanguages</li>
+                    <li class="skills__leanguages-items">Python, JavaScript, SQL</li>
+                    <li class="skills__leanguages-tools">Tools i use</li>
+                    <li class="skills__leanguages-tools-items">Django, Flask, Node, MySQL, Express, Deno</li>
+                </ul>
+                <ul class="skills__others">
+                    <li class="skills__icons"><img src="images/settings.svg" alt="others icon"></li>
+                    <li class="skills__heading">Others</li>
+                    <li class="skills__leanguages">Leanguages</li>
+                    <li class="skills__leanguages-items">Python, PHP, TypeScript</li>
+                    <li class="skills__leanguages-tools">Tools i use</li>
+                    <li class="skills__leanguages-tools-items">AWS, Git, Rest API, Heroku, Netlify, Github</li>
+                </ul>
+            </div>
+            <div class="scroll">
+                <div class="scroll-text">CLICK TO SCROLL</div>
+                <a href="#projects" class="scroll-btn">
+                    <img src="images/scroll-icon.svg" alt="scroll icon" class="scroll-btn-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="projects" class="section-projects">
+        <div class="section-projects__heading">What can i do ?</div>
+        <div class="section-projects__sub">Here is some of my work</div>
+
+        <div class="projects__container projects__container--first">
+                <img class="projects-img" src="images/project-picture.svg" alt="project picture">
+                <ul class="projects-info">
+                    <li class="projects-name">Project Name</li>
+                    <li class="projects-sub">Web app that can do this and this</li>
+                    <li class="projects-build-with">Build with:</li>
+                    <li class="projects-build-info">React, Redux, Bootstrap, Django</li>
+                    <div class="projects-buttons">
+                        <a href="#" class="btn btn--black">&nbsp;LIVE&nbsp;</a>
+                        <a href="#" class="btn btn--black">CODE</a>
+                    </div>
+                </ul>
+        </div>
+
+        <div class="projects__container projects__container--reversed">
+            <ul class="projects-info">
+                <li class="projects-name">Project Name</li>
+                <li class="projects-sub">Web app that can do this and this</li>
+                <li class="projects-build-with">Build with:</li>
+                <li class="projects-build-info">React, Redux, Bootstrap, Django</li>
+                <div class="projects-buttons">
+                    <a href="#" class="btn btn--black">&nbsp;LIVE&nbsp;</a>
+                    <a href="#" class="btn btn--black">CODE</a>
+                </div>
+            </ul>
+            <img class="projects-img" src="images/project-picture.svg" alt="project picture">
+        </div>
+
+        <div class="projects__container">
+            <img class="projects-img" src="images/project-picture.svg" alt="project picture">
+            <ul class="projects-info">
+                <li class="projects-name">Project Name</li>
+                <li class="projects-sub">Web app that can do this and this</li>
+                <li class="projects-build-with">Build with:</li>
+                <li class="projects-build-info">React, Redux, Bootstrap, Django</li>
+                <div class="projects-buttons">
+                    <a href="#" class="btn btn--black">&nbsp;LIVE&nbsp;</a>
+                    <a href="#" class="btn btn--black">CODE</a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section-contact">
+        <div class="contact-heading">Contact me</div>
+        <form action="#" class="contact-form">
+            <div class="contact-input-container">
+                <div class="contact-first-row">
+                    <input type="text" class="contact-name" placeholder="Name">
+                    <input type="email" class="contact-email" placeholder="Email">
+                </div>
+                <input type="text" class="contact-message" placeholder="Message">
+            </div>
+            <input type="submit" class="contact-submit btn btn--white">
+        </form>
+
+        <div class="copyright">&copy; Copyright</div>
+    </section>
+
+    <script>
+        const menu = document.querySelector('.navigation__hamburger-menu')
+        const bg = document.querySelector('.navigation__menu-background')
+        const items = document.querySelector('.navigation__items')
+        const bar1 = document.querySelector('.bar1')
+        const bar2 = document.querySelector('.bar2')
+        const bar3 = document.querySelector('.bar3')
+
+        let active = false;
+
+        function display() {
+            if (active) {
+                items.style.display = 'block';
+            }
+        }
+
+        menu.onclick = () => {
+            if (!active) {
+
+                bg.style.transform = 'scaleY(500)';
+                setTimeout(display, 300)
+
+                bar1.style.transform = 'rotate(45deg) translateY(14px)'
+                bar2.style.opacity = '0'
+                bar3.style.transform = 'rotate(135deg) translateY(14px)'
+
+                active = true;
+            }
+            else {
+
+                bg.style.removeProperty('transform');
+                items.style.display = 'none';
+
+                bar1.style.transform = 'rotate(0) translateY(0)'
+                bar2.style.opacity = '1'
+                bar3.style.transform = 'rotate(0) translateY(0)'
+
+                active = false;
+            }
+        }
+    </script>
+
+</body>
+</html>

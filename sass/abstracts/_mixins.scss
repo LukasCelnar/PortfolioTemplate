@@ -1,0 +1,37 @@
+// MEDIA QUERY MANAGER
+/*
+
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 2300     is where our normal styles apply
+2300px -  + :      Big desktop
+
+$device arguements:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+*/
+
+@mixin mquery($device) {
+    @if $device == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $device == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $device == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $device == big-desktop {
+        @media only screen and (min-width: 143.75em) { @content };    //2300px
+    }
+    @if $device == ultra-desktop {
+        @media only screen and (min-width: 200em) { @content };    //3200px
+    }
+    @if $device == small-height {
+        @media only screen and (min-width: 37.5em) and (max-height: 62.5em) { @content };     // width 600px > and < height 1000px
+    }
+}

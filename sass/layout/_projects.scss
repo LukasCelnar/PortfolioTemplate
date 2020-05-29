@@ -1,0 +1,118 @@
+.section-projects {
+
+    &__heading {
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    &__sub {
+        text-align: center;
+    }
+
+    .projects__container {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 100rem;
+        margin: 0 auto;
+        margin-top: 14rem;
+
+        @include mquery(tab-port) {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            text-align: center;
+        }
+
+        &--first {
+            margin-top: 7rem;
+        }
+
+        .projects-img {
+            width: calc(100% / 2);
+            transform: translate(10%, 0);
+
+            @include mquery(tab-port) {
+                transform: translate(0);
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            @include mquery(tab-port) {
+                width: 80%;
+            }
+        }
+
+        .projects-info {
+            overflow: hidden;
+            border: #707070 1px solid;
+            //box-shadow: 0 1rem 2rem rgba($color-black,.4);
+            width: calc(100% / 2);
+            transform: translate(-10%, 20%);
+            z-index: 1000;
+            background-color: $color-white;
+            list-style: none;
+            text-align: center;
+
+            @include mquery(tab-port) {
+                transform: translate(0);
+                width: 60%;
+                margin: 0 auto;
+                border-top: none;
+            }
+
+            @include mquery(tab-port) {
+                width: 80%;
+            }
+
+            .projects-name {
+                margin-top: 0.7rem;
+            }
+
+            .projects-sub {
+                font-size: 2.5rem;
+            }
+
+            .projects-build-with {
+                margin-top: 1.5rem;
+            }
+
+            .projects-build-info {
+                font-size: 2.5rem;
+            }
+
+            .projects-buttons {
+                margin-top: 3rem;
+
+                .btn {
+                    padding: 0.5rem 2rem;
+                }
+
+                .btn:first-child {
+                    margin-right: 3rem;
+                }
+            }
+        }
+    }
+
+    .projects__container--reversed {
+        .projects-img {
+            transform: translate(-10%, 0);
+
+            
+            @include mquery(tab-port) {
+                transform: translate(0);
+                transform: translateY(-100%);
+            }
+        }
+
+        .projects-info {
+            transform: translate(10%, 20%);
+
+            @include mquery(tab-port) {
+                transform: translate(0);
+                transform: translateY(100%);
+            }
+        }
+    }
+}

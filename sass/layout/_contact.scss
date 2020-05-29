@@ -1,0 +1,81 @@
+/*     <section class="section-contact">
+        <div class="contact-heading">Contact me</div>
+        <form action="" class="contact-form">
+            <input type="text" class="contact-name">
+            <input type="email" class="contact-email">
+            <input type="text" class="contact-text">
+            <input type="submit" class="contact-submit">
+        </form>
+    </section>
+
+    */
+
+.section-contact {
+
+    height: 100%;
+    background-color: $color-primary;
+
+    -webkit-clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0% 100%);
+
+    text-align: center;
+
+    .contact-heading {
+        padding-top: 13rem;
+
+        @include mquery(tab-port) {
+            padding-top: 10rem;
+        }
+    }
+    
+
+    .contact-input-container {
+
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 4rem;
+
+        @include mquery(tab-port) {
+            width: 75%;
+        }
+
+        @include mquery(phone) {
+            width: 90%;
+        }
+
+        .contact-first-row {
+            display: flex;
+        }
+
+        .contact-name {
+            margin: 0 4.5rem 4.5rem 0;
+        }
+
+        .contact-email {
+            margin-bottom: 4.5rem;
+        }
+    
+        .contact-name, .contact-email {
+            padding: 2rem;
+            width: 100%;
+        }
+
+        .contact-message {
+            width: 100%;
+            padding: 2rem 0 25rem 2rem;
+
+            @include mquery(tab-port) {
+                padding: 2rem 0 20rem 2rem;
+            }
+        }
+    }
+
+    .contact-submit {
+        margin-top: 3.5rem;
+    }
+
+    .copyright {
+        margin-top: 6rem;
+        padding-bottom: 1rem;
+    }
+}
